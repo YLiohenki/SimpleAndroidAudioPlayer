@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SimpleAndroidAudioPlayer</string>
     <string-array name="list_of_music">
-        <item>some prodigy</item>
-        <item>boxcat</item>
+        <item>bensoundbrazilsamba</item>
+        <item>bensoundcountryboy</item>
     </string-array>
 </resources>
