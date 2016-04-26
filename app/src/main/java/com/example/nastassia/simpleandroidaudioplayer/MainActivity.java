@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements PlayingStatusList
                 MyPlayer.playSomeFile(that, soundsDescriptions.getSound(position).FileId, that);
                 TextView songlabel = (TextView) findViewById(R.id.currentSongLabel);
                 songlabel.setText(soundsDescriptions.getSound(position).Name);
-                DescriptionActivity.currentSongIndex = position;
+                SoundDescriptionActivity.currentSongIndex = position;
             }
         });
         Button stopButton = (Button) findViewById(R.id.stopButton);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements PlayingStatusList
         songlabel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(that, DescriptionActivity.class);
+                Intent intent = new Intent(that.getBaseContext(), SoundDescriptionActivity.class);
                 startActivity(intent);
             }
         });

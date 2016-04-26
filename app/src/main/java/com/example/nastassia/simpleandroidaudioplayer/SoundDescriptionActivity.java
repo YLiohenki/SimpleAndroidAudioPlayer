@@ -1,19 +1,18 @@
 package com.example.nastassia.simpleandroidaudioplayer;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
-public class DescriptionActivity extends AppCompatActivity {
+public class SoundDescriptionActivity extends AppCompatActivity {
     public static Integer currentSongIndex = 0;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.song_description);
+        setContentView(R.layout.activity_sound_description);
 
         final SoundsDescriptions soundsDescriptions = new SoundsDescriptions();
 
@@ -24,8 +23,10 @@ public class DescriptionActivity extends AppCompatActivity {
         songLengthlabel.setText(sound.LengthMinutes + ":" + sound.LengthSeconds);
         TextView songCountrylabel = (TextView) findViewById(R.id.descrCountry);
         songCountrylabel.setText(sound.Country);
+        TextView songDescrlabel = (TextView) findViewById(R.id.descrDescription);
+        songDescrlabel.setText(sound.Description);
 
-        final DescriptionActivity that = this;
+        final SoundDescriptionActivity that = this;
         Button backButton = (Button) findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,17 +8,18 @@ public class SoundsDescriptions {
     {
         Sound sound = new Sound();
         sound.FileId = R.raw.bensoundbrazilsamba;
-        sound.Description = "Samba is a Brazilian musical\n" +
-                "genre and dance style, with its\n" +
-                "roots in Africa via the West\n" +
-                "African slave trade and African\n" +
-                "religious traditions, particularly\n" +
+        sound.Description = "Samba is a Brazilian musical " +
+                "genre and dance style, with its " +
+                "roots in Africa via the West " +
+                "African slave trade and African " +
+                "religious traditions, particularly " +
                 "of Angola";
         sound.Country = "Brazil";
         sound.LengthMinutes = 4;
         sound.LengthSeconds = 0;
         sound.Name = "bensoundbrazilsamba";
         SoundsStore.add(sound);
+
         sound = new Sound();
         sound.FileId = R.raw.bensoundcountryboy;
         sound.Description = "Country music is a genre of\n" +
